@@ -1,0 +1,31 @@
+{
+    "name": "aoc-2021",
+    "version": "0.0.1",
+    "license": "UNLICENSED",
+    "scripts": {
+        "day2": "node dist/day2.js",
+        "preinstall": "npx only-allow pnpm",
+        "build:ts": "tsc",
+        "build": "run-s -ls build:*",
+        "lint:eslint": "eslint . --max-warnings 0",
+        "lint": "run-p -ls lint:*",
+        "test:ts": "jest",
+        "test": "run-p -ls test:*",
+        "fix:eslint": "eslint . --fix",
+        "fix": "run-s -ls fix:*"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@types/jest": "^27.0.3",
+      "@types/node": "^14.17.34",
+      "eslint": "^7.32.0",
+      "jest": "^26.4.2",
+      "line-reader": "^0.4.0",
+      "npm-run-all": "^4.1.5",
+      "prettier": "^2.5.0",
+      "ts-jest": "^26.0.7",
+      "typescript": "^4.5.2"
+    }
+  }
+  
